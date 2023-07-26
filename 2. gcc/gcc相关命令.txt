@@ -1,0 +1,32 @@
+## 4个步骤：预处理、编译、汇编、链接
+
+-E：仅执行预处理            hello.i   // 源文件 i  
+-S：只编译                 hello.s   // 汇编文件 s 
+-c：编译和汇编，但不链接。   hello.o  // 目标文件 o
+-o <file>：指定输出文件。   a.out    // 可执行文件
+-I:  指定头文件位置      gcc -I ./inc hello.c -o hello
+-g:  编译时增加调试文件
+-Wall: 显示所有警告信息
+-D:    向程序中“动态“注册宏定义
+
+## 静态库 --空间大
+gcc -c foo.c -o foo.o    # 生成 foo.o 目标文件
+ar rcs libfoo.a foo.o    # 生成 libfoo.a 静态库
+gcc hello.c -static libfoo.a -o hello    # 编译 并链接静态库 libfoo.a
+gcc test.c -static ./lib/libmymath.a -I ./inc -o b.out  # 文件+库+头文件
+
+##  动态库 --时间慢
+1. gcc -c add.c -o add.o -fPIC          # 生成于位置无关的代码 -fPIC
+2. gcc -shared -o libmymath.so add.o sub.o   #  制作动态库
+3. -l: 指定库名      -L:指定库路径
+      gcc test.c -lmymath -L./lib -I./inc -o a.out  # 编译可执行程序
+
+4. 执行报错
+ 原因：        1. 链接器：工作于链接阶段，工作时需要 -l 和  -L
+    	  2. 动态链接器：工作于程序运行阶段，工作时需要提供动态库所在目录位置
+ 解决：
+	1. export LD_LIBRARY_PATH=动态库路径:$LD_LIBRARY_PATH （一次进程里，临时）
+	2. 移动到  /usr/lib   （永久）
+	3. .bashrc  中 写入 环境变量   （永久）
+	4. vim /etc/ld.so.conf  写入 pwd路径，ldconfig 刷新  （永久）
+ldd a.out  查看一个可执行文件或共享库文件所依赖的动态共享库
