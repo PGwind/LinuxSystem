@@ -1,0 +1,13 @@
+src = $(wildcard *.c)               # src = add.c sub.c mul.c div1.c
+obj = $(patsubst %.c, %.o, $(src))  # obj = add.o sub.o mul.o div1.o
+
+ALL:a.out
+
+a.out: $(obj)
+	gcc $^ -o $@
+
+%.o:%.c
+	gcc -c $< -o $@
+
+clean:
+	-rm -rf $(obj) a.out
