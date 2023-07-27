@@ -14,6 +14,8 @@ Vim配置文章：[Vim基本配置 – Echo (liveout.cn)](https://www.liveout.cn
 
 ### Linux系统编程
 
+GCC、GDB、Makefile笔记：[GCC、GDB、Makefile学习笔记 – Echo (liveout.cn)](https://www.liveout.cn/58-2/)
+
 笔记原作者链接：https://github.com/ABottomCoder/Linux-system-programming
 
 Linux系统编程视频：[Linux系统编程_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1KE411q7ee?p=1)
