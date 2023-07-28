@@ -1,7 +1,7 @@
 /*************************************************************************
         > File Name: open.c
         > Author: echo
-        > Mail: big_fw@foxmail.com
+        > Mail: echobydq@gmail.com
         > Created Time: Fri 28 Jul 2023 10:23:22 AM CST
  ************************************************************************/
 
