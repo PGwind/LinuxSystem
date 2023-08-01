@@ -1,0 +1,97 @@
+    PID TTY      STAT   TIME COMMAND
+      1 ?        Ss     0:02 /sbin/init nospectre_v2 nopti noibrs noibpb
+      2 ?        S      0:00 [kthreadd]
+      3 ?        I<     0:00 [rcu_gp]
+      4 ?        I<     0:00 [rcu_par_gp]
+      6 ?        I<     0:00 [kworker/0:0H-kblockd]
+      8 ?        I<     0:00 [mm_percpu_wq]
+      9 ?        S      0:00 [ksoftirqd/0]
+     10 ?        I      0:00 [rcu_sched]
+     11 ?        S      0:00 [migration/0]
+     12 ?        S      0:00 [idle_inject/0]
+     14 ?        S      0:00 [cpuhp/0]
+     15 ?        S      0:00 [kdevtmpfs]
+     16 ?        I<     0:00 [netns]
+     17 ?        S      0:00 [rcu_tasks_kthre]
+     18 ?        S      0:00 [kauditd]
+     19 ?        S      0:00 [khungtaskd]
+     20 ?        S      0:00 [oom_reaper]
+     21 ?        I<     0:00 [writeback]
+     22 ?        S      0:00 [kcompactd0]
+     23 ?        SN     0:00 [ksmd]
+     24 ?        SN     0:00 [khugepaged]
+     70 ?        I<     0:00 [kintegrityd]
+     71 ?        I<     0:00 [kblockd]
+     72 ?        I<     0:00 [blkcg_punt_bio]
+     73 ?        I<     0:00 [tpm_dev_wq]
+     74 ?        I<     0:00 [ata_sff]
+     75 ?        I<     0:00 [md]
+     76 ?        I<     0:00 [edac-poller]
+     77 ?        I<     0:00 [devfreq_wq]
+     78 ?        S      0:00 [watchdogd]
+     79 ?        I      0:00 [kworker/u2:1-events_power_efficient]
+     81 ?        S      0:00 [kswapd0]
+     82 ?        S      0:00 [ecryptfs-kthrea]
+     84 ?        I<     0:00 [kthrotld]
+     85 ?        I<     0:00 [acpi_thermal_pm]
+     86 ?        S      0:00 [scsi_eh_0]
+     87 ?        I<     0:00 [scsi_tmf_0]
+     88 ?        S      0:00 [scsi_eh_1]
+     89 ?        I<     0:00 [scsi_tmf_1]
+     91 ?        I<     0:00 [vfio-irqfd-clea]
+     93 ?        I<     0:00 [ipv6_addrconf]
+    102 ?        I<     0:00 [kstrp]
+    105 ?        I<     0:00 [kworker/u3:0]
+    118 ?        I<     0:00 [charger_manager]
+    156 ?        I<     0:00 [kworker/0:1H-kblockd]
+    157 ?        I<     0:00 [cryptd]
+    213 ?        I<     0:00 [raid5wq]
+    256 ?        S      0:00 [jbd2/vda1-8]
+    257 ?        I<     0:00 [ext4-rsv-conver]
+    328 ?        S<s    0:00 /lib/systemd/systemd-journald
+    361 ?        Ss     0:00 /lib/systemd/systemd-udevd
+    439 ?        I<     0:00 [nfit]
+    450 ?        I<     0:00 [kaluad]
+    451 ?        I<     0:00 [kmpath_rdacd]
+    452 ?        I<     0:00 [kmpathd]
+    453 ?        I<     0:00 [kmpath_handlerd]
+    454 ?        SLsl   0:03 /sbin/multipathd -d -s
+    479 ?        Ss     0:00 /lib/systemd/systemd-resolved
+    501 ?        Ssl    0:01 /usr/lib/accountsservice/accounts-daemon
+    502 ?        Ss     0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+    503 ?        Ssl    0:01 /usr/sbin/NetworkManager --no-daemon
+    518 ?        Ss     0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+    519 ?        Ssl    0:00 /usr/lib/policykit-1/polkitd --no-debug
+    526 ?        Ssl    0:00 /usr/sbin/rsyslogd -n -iNONE
+    528 ?        Ss     0:00 /lib/systemd/systemd-logind
+    532 ?        Ssl    0:00 /usr/lib/udisks2/udisksd
+    533 ?        Ssl    0:02 /usr/local/uniagent/bin/uniagent
+    534 ?        Ss     0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+    590 ?        Ssl    0:00 /usr/sbin/ModemManager
+    649 ?        Ssl    0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+    665 ?        S      0:00 /usr/sbin/chronyd -F -1
+    666 ?        S      0:00 /usr/sbin/chronyd -F -1
+    792 ?        Ss     0:00 /usr/sbin/cron -f
+    832 ?        Ss     0:00 /usr/sbin/atd -f
+    903 ?        Ss     0:02 /usr/sbin/apache2 -k start
+    915 ?        Ssl    4:07 /usr/sbin/mysqld
+    969 ttyS0    Ss+    0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220
+    971 tty1     Ss+    0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+    979 ?        Ss     0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+   3879 ?        S      0:00 /usr/sbin/apache2 -k start
+   3880 ?        S      0:00 /usr/sbin/apache2 -k start
+   3881 ?        S      0:00 /usr/sbin/apache2 -k start
+   3882 ?        S      0:00 /usr/sbin/apache2 -k start
+   3883 ?        S      0:00 /usr/sbin/apache2 -k start
+   4184 ?        S      0:00 /usr/sbin/apache2 -k start
+   5821 ?        Ss     0:00 /lib/systemd/systemd --user
+   5822 ?        S      0:00 (sd-pam)
+   5823 ?        I      0:01 [kworker/0:1-mm_percpu_wq]
+   6911 ?        S      0:00 /usr/sbin/apache2 -k start
+   8798 ?        I      0:00 [kworker/u2:0-events_unbound]
+  10075 ?        S      0:00 /usr/sbin/apache2 -k start
+  10203 ?        Ss     0:00 sshd: root@pts/0
+  10368 pts/0    Ss     0:00 -bash
+  10630 ?        I      0:00 [kworker/0:2-events]
+  11008 ?        I      0:00 [kworker/0:0]
+  11102 pts/0    R+     0:00 ps ax
