@@ -12,11 +12,14 @@ int main()
 
     pid_t pid = fork();
     if (pid == -1) {
+        // 创建进程失败
         perror("fork error");
         exit(1);
     } else if (pid == 0) {
+        // 子进程
         printf("---child is created\n");
     } else if (pid > 0) {
+        // 父进程
         printf("---parent process：mychild is %d\n", pid);
     }
     
