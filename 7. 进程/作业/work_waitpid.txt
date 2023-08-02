@@ -1,0 +1,20 @@
+Child 2: PID = 21612, Parent PID = 21610
+total 152
+-rwxr-xr-x 1 root root 16960 Aug  2 20:20 loop_wait
+-rw-r--r-- 1 root root  1170 Aug  2 20:11 loop_wait.c
+-rw-r--r-- 1 root root   142 Aug  2 11:11 makefile
+-rwxr-xr-x 1 root root 16960 Aug  2 20:20 orpan
+-rw-r--r-- 1 root root   563 Aug  2 11:24 orpan.c
+-rwxr-xr-x 1 root root 17048 Aug  2 21:12 wait
+-rw-r--r-- 1 root root  1107 Aug  2 20:31 wait.c
+-rwxr-xr-x 1 root root 16880 Aug  2 21:12 waitpid_while
+-rw-r--r-- 1 root root   833 Aug  2 20:31 waitpid_while.c
+-rwxr-xr-x 1 root root 17144 Aug  2 21:21 work_waitpid
+-rw-r--r-- 1 root root  2029 Aug  2 21:21 work_waitpid.c
+-rw-r--r-- 1 root root    41 Aug  2 21:21 work_waitpid.txt
+-rwxr-xr-x 1 root root 16960 Aug  2 20:20 zoom
+-rw-r--r-- 1 root root   538 Aug  2 15:47 zoom.c
+Child process 21612 exited with status 0
+Child process 21611 exited with status 0
+Child process 21613 terminated by signal 11
+Parent process: PID = 21610
