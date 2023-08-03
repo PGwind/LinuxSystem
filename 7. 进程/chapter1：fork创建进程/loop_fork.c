@@ -9,6 +9,9 @@ int main()
     pid_t pid;
     for (i = 0; i < 5; i ++) {
         pid = fork();     // 循环期间，子进程不fork
+        
+        // 子进程是一个独立的进程，它会继续执行从 fork() 调用后的代码
+        // 也就是说，break后子进程执行下面的if语句，父进程则继续循环到结束            
         if (pid == 0)
             break;
     }
