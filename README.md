@@ -6,7 +6,7 @@
 
 ### Linux入门教程
 
-Linux命令教程视频：[【小白入门 通俗易懂】2021韩顺平 一周学会Linux_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Sv411r7vd/?spm_id_from=333.337.search-card.all.click)
+Linux入门教程视频：[【小白入门 通俗易懂】2021韩顺平 一周学会Linux_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Sv411r7vd/?spm_id_from=333.337.search-card.all.click)
 
 Linux入门课程资料：[Linux学习资料分享 – Echo (liveout.cn)](https://www.liveout.cn/1-2/)
 
@@ -18,6 +18,6 @@ GCC、GDB、Makefile笔记：[GCC、GDB、Makefile学习笔记 – Echo (liveout
 
 Linux系统编程1：文件I/O笔记：[Linux系统编程1：文件I/O](https://www.liveout.cn/59-2/)
 
-PDF原作者链接：https://github.com/ABottomCoder/Linux-system-programming
+Linux系统编程02：文件系统：[Linux系统编程02：文件系统 – Echo小窝 (liveout.cn)](https://www.liveout.cn/60-2/)
 
 Linux系统编程视频：[Linux系统编程_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1KE411q7ee?p=1)
