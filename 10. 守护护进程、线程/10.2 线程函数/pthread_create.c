@@ -22,13 +22,14 @@ int main()
 {
     pthread_t tid;
 
-    printf("main: pid = %d, tid = %lu\n", getpid(), pthread_self());
-
     int ret = pthread_create(&tid, NULL, tfn, NULL);
     if (ret != 0) 
         sys_err("pthread_create error");
 
-    sleep(1);
+    printf("main: pid = %d, tid = %lu\n", getpid(), pthread_self());
 
-    return 0;
+    //sleep(1);
+
+    //return 0;
+    pthread_exit((void *)0);
 }
